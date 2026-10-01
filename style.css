@@ -149,3 +149,58 @@ footer{
 header h2 span, #main .anabaslik span, #main .altbaslik span{
     color: rgb(161, 210, 253);
 }
+@media screen and (max-width:800px){
+    /* html{
+        zoom:30%
+    } */
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav a{
+        font-size: 10px;
+        margin:0;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #secilmiskisi{
+        margin: 0;
+    }
+    header h2{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    #ctn-button{
+        zoom: 50%;
+        margin: 20px;
+    }
+    #main .anabaslik{
+        zoom:30%;
+    }
+    #main .altbaslik{
+        zoom:30%;
+    }
+    #aciklama .anabaslik{
+        zoom:30%;
+    }
+    .aciklamametin{
+        zoom:30%;
+    }#baglantilar{
+        zoom: 30%;
+    }
+    #baglantis{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        zoom: 30%;
+    }
+    .bolumler{
+        grid-template-columns: 1fr;
+    }
+    #copyright{
+        zoom: 30%;
+    }
+}
