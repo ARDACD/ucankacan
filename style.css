@@ -201,4 +201,7 @@ header h2 span, #main .anabaslik span, #main .altbaslik span{
     .card{
         zoom: 140%;
     }
+    html{
+        zoom: 90%;
+    }
 }
