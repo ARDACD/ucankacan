@@ -149,7 +149,7 @@ footer{
 header h2 span, #main .anabaslik span, #main .altbaslik span{
     color: rgb(161, 210, 253);
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1200px){
     /* html{
         zoom:30%
     } */
