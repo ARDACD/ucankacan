@@ -1,0 +1,151 @@
+html{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(11, 11, 82);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16%;
+    margin-right: 16%;
+    align-items: center;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    background-color: rgb(1, 1, 58);
+    padding: 1px 20px;
+    border-radius: 24px;
+    box-shadow: 0 0 80px rgb(3, 3, 102);
+}
+header nav a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    color: aliceblue;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    text-shadow: 0 0 20px aliceblue;
+}
+#secilmiskisi{
+    margin-right: 40px;
+}
+header nav a:hover{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 0px 40px aliceblue;
+    text-shadow: none;
+}
+#ctn-button{
+    padding: 6px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: aliceblue;
+    color: #010101;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px aliceblue;
+}
+#ctn-button:hover{
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 40px white;
+}
+header h2{
+    cursor: default;
+    user-select: none;
+}
+#main{
+    color: aliceblue;
+    text-align: center;
+    margin-top:13%;
+    margin-bottom: 22%;
+}
+#main .anabaslik{
+    font-size: 140px;
+    margin: 0;
+}
+#main .altbaslik{
+    margin-top:-30px;
+}
+#aciklama{
+    text-align: center;
+    color: aliceblue;
+}
+#aciklama .anabaslik{
+    font-size: 60px;
+}
+#aciklama{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#baglantis{
+    margin-left: 12%;
+    margin-right: 12%;
+    color: aliceblue;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    margin: 20px;
+    border: 4px solid lightblue;
+    border-radius: 24px;
+    padding: 20px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: aliceblue;
+    box-shadow: 0 0 20px aliceblue;
+}
+.card:hover{
+    background-color: lightblue;
+    color: #010101;
+    box-shadow: 0px 0px 100px aliceblue;
+}
+#baglantilar{
+    color: aliceblue;
+    text-align: center;
+}
+#baglantilar .anabaslik{
+    font-size: 40px;
+    margin-bottom:10px
+}
+footer{
+    background-color: rgb(7, 7, 51);
+    margin: 0;
+    margin-top:40px;
+    padding: 0;
+    padding-bottom: 30px;
+    color: aliceblue;
+}
+#footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 14%;
+    padding-right: 8%;
+}
+.bolumler{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.bolum h4{
+    margin:0px 2px;
+}
+#copyright {
+    height: 48px;
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header h2 span, #main .anabaslik span, #main .altbaslik span{
+    color: rgb(161, 210, 253);
+}
