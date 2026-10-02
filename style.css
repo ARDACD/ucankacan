@@ -201,6 +201,7 @@ header h2 span, #main .anabaslik span, #main .altbaslik span{
     }
     #aciklama .anabaslik{
         zoom:80%;
+        margin-top:-20px;
     }
     #baglantilar{
         zoom: 60%;
