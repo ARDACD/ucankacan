@@ -9,7 +9,7 @@ const gozlemci=new IntersectionObserver((entries)=>{
         }
     });
 },{
-    threshold:0
+    threshold:0.1
 });
 document.querySelectorAll('.animasyonkapsayici').forEach(kapsayici=>{
     gozlemci.observe(kapsayici);
