@@ -194,8 +194,7 @@ header h2 span, #main .anabaslik span, #main .altbaslik span{
         margin: 20px;
     }
     #main .anabaslik{
-        zoom:60%;
-        margin-top:-100px;
+        zoom:50%;
     }
     #main .altbaslik{
         zoom:60%;
