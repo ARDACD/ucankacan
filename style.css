@@ -167,7 +167,7 @@ header h2 span, #main .anabaslik span, #main .altbaslik span{
     opacity: 1;
     transform: translateY(0);
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1200px){
     header{
         display: flex;
         flex-direction: column;
