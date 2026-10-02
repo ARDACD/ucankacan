@@ -22,6 +22,7 @@ header{
     padding: 1px 20px;
     border-radius: 24px;
     box-shadow: 0 0 80px rgb(3, 3, 102);
+    animation:headeranim 1s ease;
 }
 header nav a{
     text-decoration: none;
@@ -41,6 +42,7 @@ header nav a:hover{
     color: black;
     box-shadow: 0px 0px 40px aliceblue;
     text-shadow: none;
+    transform: scale(110%);
 }
 #ctn-button{
     padding: 6px 20px;
@@ -57,6 +59,7 @@ header nav a:hover{
     background-color: white;
     cursor: pointer;
     box-shadow: 0px 0px 40px white;
+    transform: scale(110%);
 }
 header h2{
     cursor: default;
@@ -71,9 +74,11 @@ header h2{
 #main .anabaslik{
     font-size: 140px;
     margin: 0;
+    animation: mainbaslikanim 1s;
 }
 #main .altbaslik{
     margin-top:-30px;
+    animation: altbaslikanim 1.1s;
 }
 #aciklama{
     text-align: center;
@@ -108,6 +113,7 @@ header h2{
     background-color: lightblue;
     color: #010101;
     box-shadow: 0px 0px 100px aliceblue;
+    transform: scale(110%);
 }
 #baglantilar{
     color: aliceblue;
@@ -148,6 +154,18 @@ footer{
 }
 header h2 span, #main .anabaslik span, #main .altbaslik span{
     color: rgb(161, 210, 253);
+}
+.animasyonkapsayici{
+    width: 100%;
+}
+#aciklama,#baglantilar{
+    opacity:0;
+    transform: translateY(60px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+#aciklama.aktif,#baglantilar.aktif{
+    opacity: 1;
+    transform: translateY(0);
 }
 @media screen and (max-width:800px){
     header{
@@ -202,6 +220,54 @@ header h2 span, #main .anabaslik span, #main .altbaslik span{
         zoom: 140%;
     }
     html{
-        zoom: 80%;
+        zoom: 90%;
+    }
+}
+@keyframes headeranim{
+    from{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes mainbaslikanim{
+    from{
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes altbaslikanim{
+    from{
+        transform: translateY(600px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes kartanim{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-200px);
+    }
+}
+@keyframes aciklamaanim{
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
